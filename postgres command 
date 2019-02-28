@@ -1,0 +1,16 @@
+
+
+sudo service postgresql status
+
+sudo -i -u postgres                                                // enter in postgres shell
+
+createuser --interactive
+    name : koirala
+    role as super user :y
+
+
+createdb holvi;
+
+grant all privileges on database holvi to koirala ;
+
+
